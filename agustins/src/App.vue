@@ -1,0 +1,4 @@
+<template>
+  <Router />
+  <RouterView />
+</template>
