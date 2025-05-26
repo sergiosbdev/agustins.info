@@ -8,31 +8,31 @@ const routes = [
         meta: {label: 'Home'}
     },
     {
-        path: '/',
+        path: '/infantil',
         name: 'Infantil',
         component: () => import('@/views/Infantil.vue'),
         meta: {label: 'Home'}
     },
     {
-        path: '/',
+        path: '/petits',
         name: 'Petits',
         component: () => import('@/views/Petits.vue'),
         meta: {label: 'Home'}
     },
     {
-        path: '/',
+        path: '/mitjans',
         name: 'Mitjans',
         component: () => import('@/views/Mitjans.vue'),
         meta: {label: 'Home'}
     },
     {
-        path: '/',
+        path: '/grans',
         name: 'Grans',
         component: () => import('@/views/Grans.vue'),
         meta: {label: 'Home'}
     },
     {
-        path: '/',
+        path: '/joves',
         name: 'Joves',
         component: () => import('@/views/Joves.vue'),
         meta: {label: 'Home'}
@@ -40,7 +40,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    hisotry: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior(to, from, savedPosition) {
         return savedPosition || { top: 0 };
